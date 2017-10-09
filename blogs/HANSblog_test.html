@@ -74,21 +74,22 @@
 
                                                                 </section>
 
-								<div id="gitment">
-								<p>下面是评论</p>
+								<!-- 来必力City版安装代码 -->
+								<div id="lv-container" data-id="city" data-uid="MTAyMC8zMTI1OC83ODA3">
+								<script type="text/javascript">
+								   (function(d, s) {
+								       var j, e = d.getElementsByTagName(s)[0];
+								       if (typeof LivereTower === 'function') { return; }
+								       j = d.createElement(s);
+								       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+								       j.async = true;
+
+								       e.parentNode.insertBefore(j, e);
+									   })(document, 'script');
+									</script>
+									<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
 								</div>
-								<script>
-								var gitment = new Gitment({
-								id: 'location.href', // 可选。默认为 location.href
-								owner: 'GitHub ID',
-								repo: 'https://github.com/hans2936/hans2936.github.io',
-								oauth: {
-								client_id: '3e8c534985cee5b9549d',
-								client_secret: '292ef9d120bfb7ed9b61b0455a52c8c61737250c',
-								  },
-								})
-								gitment.render('gitment')
-								</script>
+								<!-- City版安装代码已完成 -->
 
 						</div>
 					</div>
@@ -169,7 +170,6 @@
 			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../assets/js/main.js"></script>
-			<script src="../assets/js/gitment.js"></script>
 
 	</body>
 </html>
