@@ -25,3 +25,5 @@ Credits:
 		Misc. Sass functions (@HugoGiraudel)
 		Respond.js (j.mp/respondjs)
 		Skel (skel.io)
+
+评论功能: 来必力 https://livere.com
