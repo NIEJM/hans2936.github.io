@@ -27,3 +27,5 @@ Credits:
 		Skel (skel.io)
 
 评论功能: 来必力 https://livere.com
+分享功能：http://overtrue.me/share.js/
+
