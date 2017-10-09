@@ -12,8 +12,14 @@
 		<meta name="baidu-site-verification" content="25JagZe9G4" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/share.min.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+		<style>
+		  .row{padding: 20px 0 0 20px}
+		  .row-pad{padding: 20px 0 0 60px}
+		</style>
 	</head>
 	<body>
 		<!-- Wrapper -->
@@ -27,8 +33,7 @@
 								<header id="header">
 									<a href="index.html" class="logo"><strong>主页</strong></a>
 									<ul class="icons">
-										<li><a href="https://www.weibo.com/2161285545" class="icon fa-weibo"><span class="label">Weibo</span></a></li>
-										<li><a href="https://github.com/hans2936" class="icon fa-github"><span class="label">GitHub</span></a></li>
+										<div class="social-share" data-sites="weibo,qq,wechat"> 分享到：</div>
 									</ul>
 								</header>
 
@@ -58,7 +63,7 @@
 											</p>
 										</article>
 										<article>
-											<a href="HANSnote.html" class="image"><img src="images/IMG_0537.jpg" alt="" /></a>
+											<a href="HANSnote.html" class="image"><img src="images/IMG_0712.jpg" alt="" /></a>
 											<h3>散文随笔</h3>
 											<p> 
 											生活笔记，业余文学爱好者 <br/><br/> <i>点击图片进入</i>
@@ -76,9 +81,6 @@
 
 							<!-- Search -->
 								<section id="search" class="alt">
-									<form method="GET" action="http://baidu.com/s">
-										<input type="text" name="wd" id="kw" placeholder="百度一下" />
-									</form>
 								<!--Google站内搜索开始-->
 									<form method=get action='http://www.google.com/search'>
 									<input type="text" name="q" id="s" placeholder="站内Google" />
@@ -89,15 +91,6 @@
 									<input type=hidden name=sitesearch value='hans2936.github.io'>
 									</form>
 								<!--Google站内搜索结束-->
-								<!--Baidu站内搜索开始-->
-									<form action="http://www.baidu.com/baidu">
-									<input type="text" name="wd" id="kw" placeholder="站内百度" />
-									<input name=tn type=hidden value="bds">
-									<input name=cl type=hidden value="3">
-									<input name=ct type=hidden value="2097152">
-									<input name=si type=hidden value="hans2936.github.io">
-									</form>
-								<!--Baidu站内搜索结束-->
 								</section>
 
 							<!-- Menu -->
@@ -163,6 +156,6 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/jquery.share.min.js"></script>
 	</body>
 </html>
