@@ -27,7 +27,7 @@
 <?php
 set_time_limit("600");
 //获取搜索关键字
-$keyword=trim($_POST["keyword"]);
+$keyword=trim($_GET["keyword"]);
 //检查是否为空
 
 if($keyword==""){
