@@ -28,4 +28,5 @@ Credits:
 
 评论功能: 来必力 https://livere.com
 分享功能：http://overtrue.me/share.js/
+本地PHP预览: http://www.jianshu.com/p/d006a34a343f
 
