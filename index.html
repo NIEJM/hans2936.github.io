@@ -16,10 +16,9 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
-		<style>
-		  .row{padding: 20px 0 0 20px}
-		  .row-pad{padding: 20px 0 0 60px}
-		</style>
+		<link rel="stylesheet" href="assets/nivo_slider/themes/default/default.css" type="text/css" media="screen" />
+	        <link rel="stylesheet" href="assets/nivo_slider/nivo-slider.css" type="text/css" media="screen" />
+
 	</head>
 	<body>
 		<!-- Wrapper -->
@@ -40,11 +39,11 @@
 							<!-- Banner -->
 								<section id="banner">
 									<div class="content">
-										<article>
+										<header>
 											<h1> 韩朔的博客 </h1>
 											<p> 粒子物理和原子核物理博士 <br/>
                                                                              		</p>
-										</article>
+										</header>
 										<p> 
 										找个地方放置工作笔记和散文，顺便学学HTML/Javascript
 										</p>
@@ -52,8 +51,25 @@
 										<a href="#" class="icon fa-eye"> 本站点击次数：<span id="busuanzi_value_site_pv"></span></a> | 
 										<a href="#" class="icon fa-user"> 本站访客人次：<span id="busuanzi_value_site_uv"></span></a></br>
 										</span>
-
 									</div>
+								        <div class="slider-wrapper theme-default">
+										<div id="slider" class="nivoSlider">
+								                <a href="blogs/Cernnote.html" class="image">
+										<img src="images/CERN.jpg" alt="" data-thumb="images/pic01.jpg" title="#htmlcaption1" data-transition="slideInLeft"/>
+										</a>
+										<a href="blogs/Hansnote.html" class="image">
+										<img src="images/ROOT.png" alt="" data-thumb="images/pic02.jpg" title="#htmlcaption2" data-transition="slideInLeft"/>
+                                                                                </a>
+									    </div>
+								            <div id="htmlcaption1" class="nivo-html-caption">
+								                <h2> 示例标题一  <a href="#"> 链接</a></h2>
+								            </div>
+									    <div id="htmlcaption2" class="nivo-html-caption">
+                                                                                <h2> 示例标题二  <a href="#"> 链接</a></h2>
+                                                                            </div>
+									</div>
+
+
 								</section>
 
 							<!-- Section -->
@@ -232,5 +248,11 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/jquery.share.min.js"></script>
 			<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		        <script type="text/javascript" src="assets/nivo_slider/jquery.nivo.slider.js"></script>
+		        <script type="text/javascript">
+			    $(window).load(function() {
+			        $('#slider').nivoSlider();
+			    });
+		        </script>
 	</body>
 </html>
