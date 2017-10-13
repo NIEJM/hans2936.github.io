@@ -3588,9 +3588,9 @@
 		-ms-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
 		transition: margin-left 0.5s ease, box-shadow 0.5s ease;
 		background-color: #f5f6f7;
-		font-size: 0.9em;
+		font-size: 0.99em;
 		position: relative;
-		width: 26em;
+		width: 20em;
 	}
 
 		#sidebar h2 {
@@ -3600,7 +3600,7 @@
 		#sidebar > .inner {
 			padding: 2.22222em 2.22222em 2.44444em 2.22222em ;
 			position: relative;
-			width: 26em;
+			width: 20em;
 		}
 
 			#sidebar > .inner > * {
@@ -3637,7 +3637,7 @@
 			border: 0;
 			display: block;
 			height: 7.5em;
-			left: 26em;
+			left: 20em;
 			line-height: 7.5em;
 			outline: 0;
 			overflow: hidden;
@@ -3671,18 +3671,18 @@
 			}
 
 		#sidebar.inactive {
-			margin-left: -26em;
+			margin-left: -20em;
 		}
 
 		@media screen and (max-width: 1680px) {
 
 			#sidebar {
-				width: 24em;
+				width: 18em;
 			}
 
 				#sidebar > .inner {
 					padding: 1.66667em 1.66667em 1.33333em 1.66667em ;
-					width: 24em;
+					width: 18em;
 				}
 
 					#sidebar > .inner > .alt {
@@ -3693,7 +3693,7 @@
 
 				#sidebar .toggle {
 					height: 6.25em;
-					left: 24em;
+					left: 18em;
 					line-height: 6.25em;
 					text-indent: 5em;
 					width: 5em;
@@ -3704,7 +3704,7 @@
 					}
 
 				#sidebar.inactive {
-					margin-left: -24em;
+					margin-left: -18em;
 				}
 
 		}
@@ -3953,7 +3953,7 @@
 
 	#footer .copyright {
 		color: #9fa3a6;
-		font-size: 0.9em;
+		font-size: 0.99em;
 	}
 
 		#footer .copyright a {
@@ -3982,7 +3982,7 @@
 			color: inherit;
 			cursor: pointer;
 			display: block;
-			font-size: 0.9em;
+			font-size: 0.99em;
 			padding: 0.625em 0;
 		}
 
@@ -4049,7 +4049,7 @@
 		}
 
 			#menu > ul > li > ul a, #menu > ul > li > ul span {
-				font-size: 0.8em;
+				font-size: 0.99em;
 			}
 
 			#menu > ul > li > ul > li {
