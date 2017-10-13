@@ -16,22 +16,23 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
-		<link rel="stylesheet" href="assets/nivo_slider/themes/default/default.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="assets/nivo_slider/themes/light/light.css" type="text/css" media="screen" />
-	        <link rel="stylesheet" href="assets/nivo_slider/nivo-slider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="assets/Edslider/css/edslider.css">
+        <link rel="stylesheet" href="assets/Edslider/css/styles.css">
+	<link rel="stylesheet" href="assets/Edslider/css/animate-custom.css">
 
 	</head>
 	<body>
 		<!-- Wrapper -->
-			<div id="wrapper">
 
+			
+		<div id="wrapper">
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>主页</strong></a>
+									<a href="blogs/About.html" class="logo"><strong>韩朔的博客：</strong>关于本站</a>
 									<ul class="icons">
 										<div class="social-share" data-sites="weibo,qq,wechat"> 分享到：</div>
 									</ul>
@@ -40,19 +41,16 @@
 							<!-- Banner -->
 								<section id="banner">
 									<div class="content">
-										<header>
-											<h1> 韩朔的博客 </h1>
-											<p> 粒子物理和原子核物理博士 <br/>
-                                                                             		</p>
-										</header>
-										<p> 
-										找个地方放置工作笔记和散文，顺便学学HTML/Javascript
-										</p>
-										<span id="busuanzi_container_site_pv">
-										<a href="#" class="icon fa-eye"> 本站点击次数：<span id="busuanzi_value_site_pv"></span></a> | 
-										<a href="#" class="icon fa-user"> 本站访客人次：<span id="busuanzi_value_site_uv"></span></a></br>
-										</span>
+          								     <ul class="mySlideshow">
+          								             <li class="test1">
+          								                     <div class="animated fadeInRight"><a href="#"><font color=white>高能物理数据分析</font></a></div>
+          								             </li>
+										     <li class="test2">
+                                                                                             <div class="animated fadeInRight"><a href="#"><font color=white>迪士尼游记</font></a></div>
+                                                                                     </li>
+          								     </ul>
 									</div>
+
 
 								</section>
 
@@ -63,7 +61,7 @@
                                                                         </header>
 									<div class="posts" id="mark">
 										<article>
-                                                                                        <a href="blogs/Cernnote.html" class="image"><img src="images/LHC.jpg" alt="" /></a>
+                                                                                        <a href="blogs/Cernnote.html" class="image"><img src="images/ATLAS.jpg" alt="" /></a>
                                                                                         <h3>工作笔记</h3>
                                                                                         <p>
                                                                                         Geek基础知识，高能物理实验数据分析笔记。
@@ -137,6 +135,7 @@
 									</div>
 								</section>
 
+
 						</div>
 					</div>
 
@@ -146,16 +145,9 @@
 
 							<!-- Search -->
 								<section id="search" class="alt">
-								<!--Google站内搜索开始-->
-									<form method=get action='http://www.google.com/search'>
-									<input type="text" name="q" id="s" placeholder="站内Google" />
-									<input type=hidden name=ie value='utf-8'>
-									<input type=hidden name=oe value='utf-8'>
-									<input type=hidden name=hl value=zh-CN>
-									<input type=hidden name=domains value='hans2936.github.io'>
-									<input type=hidden name=sitesearch value='hans2936.github.io'>
-									</form>
-								<!--Google站内搜索结束-->
+								<form method=get action='blogs/Search.html'>
+								<input type="text" name="q" id="s" placeholder="站内Google" />
+								</form>
 								</section>
 
 							<!-- Menu -->
@@ -232,11 +224,15 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/jquery.share.min.js"></script>
 			<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-		        <script type="text/javascript" src="assets/nivo_slider/jquery.nivo.slider.js"></script>
-		        <script type="text/javascript">
-			    $(window).load(function() {
-			        $('#slider').nivoSlider();
-			    });
+			<script src="assets/Edslider/js/jquery.edslider.js"></script>
+		        <script>
+		                $(document).ready(function(){
+		                        //Call plugin
+		                        $('.mySlideshow').edslider({
+		                                width : '100%',
+		                                height: 500
+		                        });
+		                });
 		        </script>
 	</body>
 </html>
