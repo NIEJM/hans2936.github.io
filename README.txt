@@ -31,5 +31,5 @@ Credits:
 点击数查询：不蒜子 http://ibruce.info/2015/04/04/busuanzi/
 图片滚动：nivo-slider https://github.com/Codeinwp/Nivo-Slider-jQuery
 手机图片滚动 hammer.js http://hammerjs.github.io
-（未成功）本地PHP预览: http://www.jianshu.com/p/d006a34a343f 本地搜索内核: http://www.moon-soft.com/download/info/1492.html
+（无法在GitHub Pages使用）本地PHP预览: http://www.jianshu.com/p/d006a34a343f 本地搜索内核: http://www.moon-soft.com/download/info/1492.html
 

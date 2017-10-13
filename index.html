@@ -40,15 +40,21 @@
 
 							<!-- Banner -->
 								<section id="banner">
-									<div class="content">
+								<div class="content">
 
 								        <div class="slider-wrapper theme-default">
 										<div id="slider" class="nivoSlider">
 								                <a href="blogs/Cernnote.html" class="image">
-										<img src="images/ATLAS.jpg" alt="" data-thumb="images/ATLAS.jpg" title="#htmlcaption1" data-transition="fade"/>
+										<img src="images/ATLAS.jpg" alt="" data-thumb="images/ATLAS.jpg" title="#htmlcaption1" />
 										</a>
 										<a href="blogs/Hansnote.html" class="image">
-										<img src="images/IMG_0712.jpg" alt="" data-thumb="images/IMG_0712.jpg" title="#htmlcaption2" data-transition="fade"/>
+										<img src="images/IMG_0712.jpg" alt="" data-thumb="images/IMG_0712.jpg" title="#htmlcaption2" />
+                                                                                </a>
+										<a href="blogs/Hansnote.html" class="image">
+                                                                                <img src="images/Lake.jpg" alt="" data-thumb="images/Lake.jpg" title="#htmlcaption3" >
+                                                                                </a>
+										<a href="blogs/Hansnote.html" class="image">
+                                                                                <img src="images/HongKong.jpg" alt="" data-thumb="images/HongKong.jpg" title="#htmlcaption4" />
                                                                                 </a>
 									    </div>
 								            <div id="htmlcaption1" class="nivo-html-caption">
@@ -57,8 +63,14 @@
 									    <div id="htmlcaption2" class="nivo-html-caption">
                                                                                 <h2> 标题二  <a href="#"> 迪士尼游记</a></h2>
                                                                             </div>
+									    <div id="htmlcaption3" class="nivo-html-caption">
+                                                                                <h2>  <a href="#"> 第三张图</a></h2>
+                                                                            </div>
+									    <div id="htmlcaption4" class="nivo-html-caption">
+                                                                                <h2>  <a href="#"> 第四张图</a></h2>
+                                                                            </div>
 									</div>
-									</div>
+								</div>
 
 
 								</section>
@@ -235,11 +247,41 @@
 			<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 		        <script type="text/javascript" src="assets/nivo_slider/jquery.nivo.slider.js"></script>
 		        <script type="text/javascript">
-			    $(window).load(function() {
-			        $('#slider').nivoSlider();
-			    });
+			jQuery(document).ready(function($) {
+			    if ("ontouchstart" in document.documentElement) {
+			    $('#slider').nivoSlider({
+				effect: 'slideInLeft',
+				animSpeed: 700,
+				pauseTime: 4000,
+				controlNav: true,
+			        controlNavThumbs: false
+				});
+			    $('a.nivo-nextNav').css('visibility', 'hidden');
+			    $('a.nivo-prevNav').css('visibility', 'hidden');
+			    var element = document.getElementById('slider');
+			    var hammertime = Hammer(element).on("swipeleft", function(event) {
+			      $('#slider img').attr("data-transition","slideInLeft");
+			      $('a.nivo-nextNav').trigger('click');
+			      return false;
+			      });
+			    var hammertime = Hammer(element).on("swiperight", function(event) {
+			      $('#slider img').attr("data-transition","slideInRight");
+			      $('a.nivo-prevNav').trigger('click');
+			      $('#slider img').attr("data-transition","slideInLeft");
+			      return false;
+			      });
+				}
+				else {
+				  $('#slider').nivoSlider({
+				      effect: 'random',
+				      controlNav: true,
+				      controlNavThumbs: false
+				      });
+				}
+				});
 		        </script>
-			<script src="assets/js/wap.js"></script>
-			<script type="text/javascript">browserRedirect("indexmobile.html");</script>
+			<script src="assets/js/hammer.min.js"></script>
+			<!-- <script src="assets/js/wap.js"></script> -->
+                        <!-- <script type="text/javascript">browserRedirect("indexmobile.html");</script> -->
 	</body>
 </html>

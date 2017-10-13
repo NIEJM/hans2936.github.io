@@ -1,5 +1,4 @@
 https://hans2936.github.io/index.html
-https://hans2936.github.io/indexmobile.html
 https://hans2936.github.io/blogs/About.html
 https://hans2936.github.io/blogs/CERNblog_test.html
 https://hans2936.github.io/blogs/Cernnote.html
