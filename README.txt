@@ -29,6 +29,7 @@ Credits:
 评论功能: 来必力 https://livere.com
 分享功能：https://github.com/overtrue/share.js
 点击数查询：不蒜子 http://ibruce.info/2015/04/04/busuanzi/
-图片滚动：Edslider from http://www.17sucai.com
+图片滚动：nivo-slider https://github.com/Codeinwp/Nivo-Slider-jQuery
+手机图片滚动 hammer.js http://hammerjs.github.io
 （未成功）本地PHP预览: http://www.jianshu.com/p/d006a34a343f 本地搜索内核: http://www.moon-soft.com/download/info/1492.html
 
