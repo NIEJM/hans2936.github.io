@@ -16,9 +16,9 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
-	<link rel="stylesheet" href="assets/Edslider/css/edslider.css">
-        <link rel="stylesheet" href="assets/Edslider/css/styles_mobile.css">
-	<link rel="stylesheet" href="assets/Edslider/css/animate-custom.css">
+		<link rel="stylesheet" href="assets/nivo_slider/themes/default/default.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="assets/nivo_slider/themes/light/light.css" type="text/css" media="screen" />
+	        <link rel="stylesheet" href="assets/nivo_slider/nivo-slider.css" type="text/css" media="screen" />
 
 	</head>
 	<body>
@@ -41,14 +41,23 @@
 							<!-- Banner -->
 								<section id="banner">
 									<div class="content">
-          								     <ul class="mySlideshow">
-          								             <li class="test1">
-          								                     <div class="animated fadeInRight"><a href="#"><font color=white>高能物理数据分析</font></a></div>
-          								             </li>
-										     <li class="test2">
-                                                                                             <div class="animated fadeInRight"><a href="#"><font color=white>迪士尼游记</font></a></div>
-                                                                                     </li>
-          								     </ul>
+
+								        <div class="slider-wrapper theme-default">
+										<div id="slider" class="nivoSlider">
+								                <a href="blogs/Cernnote.html" class="image">
+										<img src="images/ATLAS.jpg" alt="" data-thumb="images/ATLAS.jpg" title="#htmlcaption1" data-transition="fade"/>
+										</a>
+										<a href="blogs/Hansnote.html" class="image">
+										<img src="images/IMG_0712.jpg" alt="" data-thumb="images/IMG_0712.jpg" title="#htmlcaption2" data-transition="fade"/>
+                                                                                </a>
+									    </div>
+								            <div id="htmlcaption1" class="nivo-html-caption">
+								                <h2> 标题一  <a href="#"> 高能物理数据分析</a></h2>
+								            </div>
+									    <div id="htmlcaption2" class="nivo-html-caption">
+                                                                                <h2> 标题二  <a href="#"> 迪士尼游记</a></h2>
+                                                                            </div>
+									</div>
 									</div>
 
 
@@ -224,15 +233,34 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/jquery.share.min.js"></script>
 			<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-			<script src="assets/Edslider/js/jquery.edslider.js"></script>
-		        <script>
-		                $(document).ready(function(){
-		                        //Call plugin
-		                        $('.mySlideshow').edslider({
-		                                width : '100%',
-		                                height: 500
-		                        });
-		                });
+		        <script type="text/javascript" src="assets/nivo_slider/jquery.nivo.slider.js"></script>
+		        <script type="text/javascript">
+			jQuery(document).ready(function($) {
+			    if ("ontouchstart" in document.documentElement) {
+			    $('#slider').nivoSlider({
+				});
+			    $('a.nivo-nextNav').css('visibility', 'hidden');
+			    $('a.nivo-prevNav').css('visibility', 'hidden');
+			    var element = document.getElementById('slider');
+			    var hammertime = Hammer(element).on("swipeleft", function(event) {
+			      $('#slider img').attr("data-transition","slideInLeft");
+			      $('a.nivo-nextNav').trigger('click');
+			      return false;
+			      });
+			    var hammertime = Hammer(element).on("swiperight", function(event) {
+			      $('#slider img').attr("data-transition","slideInRight");
+			      $('a.nivo-prevNav').trigger('click');
+			      $('#slider img').attr("data-transition","slideInLeft");
+			      return false;
+			      });
+				}
+				else {
+				  $('#slider').nivoSlider({
+				      });
+				}
+				});
 		        </script>
+			<script src="assets/js/hammer.min.js"></script>
+
 	</body>
 </html>

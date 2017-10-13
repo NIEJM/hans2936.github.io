@@ -1,0 +1,94 @@
+ .test1{
+        background:url("../../../images/ATLAS.jpg") center no-repeat;
+        background-size: contain;
+        }
+ .test1 div{
+        font-size:40px;
+        color:#fff;
+        width:640px;
+        bottom: 15%;
+        left: 3%;
+        text-align: center;
+        background: #000;
+ }
+        .test1 a {
+        display:inline !important;
+ }
+
+.test2{
+        background:url("../../../images/IMG_0712.jpg") center no-repeat;
+        background-size: contain;
+}
+.test2 div{
+        font-size:40px;
+        color:#fff;
+        width:640px;
+        bottom: 15%;
+        left: 3%;
+        text-align: center;
+        background: #000;
+        }
+.test2 a {
+        display:inline !important;
+}
+
+.container{
+	max-width: 1200px;
+	overflow:hidden;
+	padding: 20px;
+}
+.container{
+	margin:auto;
+}
+.mySlideshow .animated{
+	position:absolute;
+}
+.first{
+	background:url("../images/first.jpg") center no-repeat;
+}
+.first a,
+.first img{
+	display:block;
+}
+.first a{
+	top:80px;
+	left:39%;
+	margin-left:-165px;
+}
+.first div{
+	font-family:'Open Sans Condensed', sans-serif;
+	font-size:50px;
+	bottom:80px;
+	left:39%;
+	width:320px;
+	text-align:center;
+	margin-left:-160px;
+}
+.second{
+	background:url("../images/second.jpg") center no-repeat;
+}
+.second img{
+	top: 160px;
+	right: 19%;
+}
+.third{
+	background:url("../images/third.jpg") center no-repeat;
+}
+.third img{
+	top:100px;
+	left: 23%;
+}
+.fourth{
+	background:url("../images/fourth.jpg") center no-repeat;
+}
+.fourth img{
+	top:320px;
+	right:8%;
+}
+.fifth{
+	background:url("../images/fifth.jpg") center no-repeat;
+}
+.fifth img{
+	top:120px;
+	left:21%;
+}
