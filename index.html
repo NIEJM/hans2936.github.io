@@ -246,7 +246,7 @@
 			    if ("ontouchstart" in document.documentElement) {
 			    $('#slider').nivoSlider({
 				effect: 'slideInLeft',
-				animSpeed: 700,
+				animSpeed: 2100,
 				pauseTime: 4000,
 				controlNav: false,
 			        controlNavThumbs: false
@@ -265,15 +265,15 @@
 			      $('#slider img').attr("data-transition","slideInLeft");
 			      return false;
 			      });
-				}
+			}
 				else {
 				  $('#slider').nivoSlider({
-				      effect: 'random',
-				      controlNav: true,
-				      controlNavThumbs: false
-				      });
-				}
+	                         effect: 'random',
+        	                 controlNav: true,
+                	         controlNavThumbs: false
 				});
+			}
+			})
 		        </script>
 			<script src="assets/js/hammer.min.js"></script>
 			<!-- <script src="assets/js/wap.js"></script> -->
