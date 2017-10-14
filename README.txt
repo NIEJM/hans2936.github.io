@@ -26,10 +26,10 @@ Credits:
 		Respond.js (j.mp/respondjs)
 		Skel (skel.io)
 
-评论功能: 来必力 https://livere.com
+评论功能: 微博评论箱 http://open.weibo.com/widget/comments.php 
 分享功能：https://github.com/overtrue/share.js
 点击数查询：不蒜子 http://ibruce.info/2015/04/04/busuanzi/
 图片滚动：nivo-slider https://github.com/Codeinwp/Nivo-Slider-jQuery
-手机图片滚动 hammer.js http://hammerjs.github.io and http://willrees.com/2013/02/make-your-nivo-slider-touch-capable/
+手机图片滚动 http://hammerjs.github.io 和 http://willrees.com/2013/02/make-your-nivo-slider-touch-capable/
 本地PHP预览: http://www.jianshu.com/p/d006a34a343f 
 本地搜索内核(search.php, 无法直接在GitHub Pages使用): http://www.moon-soft.com/download/info/1492.html
