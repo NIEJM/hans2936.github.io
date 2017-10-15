@@ -3841,7 +3841,7 @@
 		@media screen and (max-width: 1680px) {
 
 			#header {
-				padding-top: 5em;
+				padding-top: 4em;
 			}
 
 		}
@@ -3858,8 +3858,8 @@
 				}
 
 				#header .icons {
-					height: 5em;
-					line-height: 5em;
+					/*height: 5em;
+					line-height: 5em;*/
 					position: absolute;
 					right: -0.5em;
 					top: 0;
