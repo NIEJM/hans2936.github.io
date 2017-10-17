@@ -84,18 +84,20 @@
 								<div class="social-share" data-sites="weibo,qq,wechat"> 分享到：</div>
 								
 								<p id="comment"><h3>评论栏：<h3></p>
-								<script type="text/javascript">
-                                                                (function(){
-                                                                var url = "http://widget.weibo.com/distribution/comments.php?width=0&url=https%3A%2F%2Fhans2936.github.io%2Fblogs%2FHANSblog_test.html&ralateuid=2161285545&appkey=203699656&dpc=1";
-                                                                document.write('<iframe id="WBCommentFrame" src="' + url + '" scrolling="no" frameborder="0" style="width:100%"></iframe>');
-                                                                })();
-                                                                </script>
-                                                                <script src="http://tjs.sjs.sinajs.cn/open/widget/js/widget/comment.js" type="text/javascript" charset="utf-8"></script>
+								<div id="lv-container" data-id="city" data-uid="MTAyMC8zMTI1OC83ODA3">
                                                                 <script type="text/javascript">
-                                                                window.WBComment.init({
-                                                                    "id": "WBCommentFrame"
-                                                                });
-                                                                </script>
+                                                                   (function(d, s) {
+                                                                       var j, e = d.getElementsByTagName(s)[0];
+                                                                       if (typeof LivereTower === 'function') { return; }
+                                                                       j = d.createElement(s);
+                                                                       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                                                                       j.async = true;
+
+                                                                       e.parentNode.insertBefore(j, e);
+                                                                           })(document, 'script');
+                                                                        </script>
+                                                                        <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+                                                                </div>
 
 						</div>
 					</div>

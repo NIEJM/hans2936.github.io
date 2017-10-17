@@ -1,5 +1,6 @@
 韩朔的个人网页，用来学习HTML/Javascript。
 
+2017年10月17日 发现微博评论箱不支持https，继续使用来必力
 2017年10月14日：加入图片滚动，谷歌搜索结果页，评论功能准备使用微博评论箱
 2017年10月9日：完成博客模版，包括评论与分享，搜索为谷歌站内搜索，因为PHP不能在GitHub使用
 
@@ -27,7 +28,7 @@ Credits:
 		Respond.js (j.mp/respondjs)
 		Skel (skel.io)
 
-评论功能: 微博评论箱 http://open.weibo.com/widget/comments.php 
+评论功能: 来必力 http://www.laibili.com.cn
 分享功能：https://github.com/overtrue/share.js
 点击数查询：不蒜子 http://ibruce.info/2015/04/04/busuanzi/
 图片滚动：nivo-slider https://github.com/Codeinwp/Nivo-Slider-jQuery
