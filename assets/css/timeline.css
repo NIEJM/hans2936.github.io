@@ -1,0 +1,161 @@
+article,section,time,aside{display:block;}
+.point-time {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 17px;
+  left: 20%;
+  background: #1c87bf;
+  margin-left: -4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #fff;
+}
+
+.text-red {
+  color: #f6393f;
+}
+
+.text-blue {
+  color: #1c87bf;
+}
+
+.text-green {
+  color: #95c91e;
+}
+
+.text-yellow {
+  color: #ffb902;
+}
+
+.text-purple {
+  color: #d32d93;
+}
+
+.point-red {
+  background-color: #f6393f;
+}
+
+.point-blue {
+  background-color: #1c87bf;
+}
+
+.point-green {
+  background-color: #95c91e;
+}
+
+.point-yellow {
+  background-color: #ffb902;
+}
+
+.point-purple {
+  background-color: #d32d93;
+}
+
+.content {
+  width: 970px;
+  margin: 30px auto;
+}
+.content article {
+  position: relative;
+}
+.content article section {
+  padding: 0 0 17px;
+  position: relative;
+}
+.content article section:before {
+  content: "";
+  width: 5px;
+  top: 17px;
+  bottom: -17px;
+  left: 20%;
+  background: #e6e6e6;
+  position: absolute;
+}
+.content article section:last-child:before {
+  display: none;
+}
+.content article section time {
+  width: 15%;
+  display: block;
+  position: absolute;
+}
+.content article section time > span {
+  display: block;
+  text-align: right;
+}
+.content article section aside {
+  color: #3a3a38;
+  margin-left: 25%;
+  padding-bottom: 15px;
+}
+.content article section .brief {
+  color: #9f9f9f;
+}
+#moquu_top,#moquu_wxin,#moquu_wshare {
+        z-index:2;
+        width:30px;
+        height:30px;
+        right:10px;
+        position:fixed;
+        cursor:pointer;
+        _position:absolute;
+        _bottom:auto;
+        _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.          currentStyle.marginBottom,10)||0)))
+}
+
+#moquu_wxin { bottom:130px; right:10px;
+}
+#moquu_wxin a {
+        background:url(../../images/Topbutton/sbtn.png) 0 0px;
+        right:0;
+        float:left;
+        width:30px;
+        height:30px;
+        text-indent:-9999px
+}
+#moquu_wxin a:hover {
+        background:url(../../images/Topbutton/sbtn.png) -30px -0px
+}
+#moquu_wshare {bottom:100px; right:10px;
+}
+#moquu_wshare a {
+        background:url(../../images/Topbutton/sbtn.png) 0 -30px;
+        width:30px;
+        height:30px;
+        right:0;
+        float:left;
+        text-indent:-9999px
+}
+#moquu_wshare a:hover {
+        background:url(../../images/Topbutton/sbtn.png) -30px -30px
+}
+
+.moquu_wxin,.moquu_wshare {
+        position:relative;
+        z-index:2
+}
+.moquu_wxin a:hover .moquu_wxinh,.moquu_wshare a:hover .moquu_wshareh {
+        display:block
+}
+.moquu_wxin .moquu_wxinh {
+        position:absolute;
+        display:none;
+        right:30px;
+        bottom:0px;
+        width:70px;
+        height:30px;
+        background:url(../../images/Topbutton/fankui.png) 0 0 no-repeat #ff6060;
+        color:#FFF; border-radius:4px 0 0 4px;
+}
+.moquu_wshare .moquu_wshareh {
+        position:absolute;
+        display:none;
+        right:36px;
+        bottom:-85px;
+        width:100px;
+        height:120px;
+        background:url(../../images/Topbutton/weixin.png) no-repeat
+}
+
+#topcontrol{background:#4c4c4c; height:30px; width:30px; border-radius:4px;}
