@@ -4,7 +4,8 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<!-- <html> -->
+<html xmlns:wb="http://open.weibo.com/wb">
 	<head>
 		<title> 关于本站 </title>
 		<meta charset="utf-8" />
@@ -14,6 +15,7 @@
 		<link rel="stylesheet" href="../assets/css/share.min.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=appkey" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 
@@ -83,7 +85,7 @@
 								</article>
 								<article>
                                                                 <a href="https://www.weibo.com/2161285545" class="image"><img src="../images/IMG_0550.jpg" alt="" /></a>
-								<iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=0&isWeibo=1&isFans=1&uid=2161285545&verifier=efb351da&dpc=1"></iframe>
+								<iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=0&isWeibo=1&isFans=1&uid=2161285545&verifier=efb351da&dpc=1&URL=http://widget.weibo.com"></iframe>
 								</article>
 								</div>
 
@@ -92,19 +94,8 @@
 								 <header class="major">
                                                                                 <h2>留言板</h2>
                                                                  </header>
-								<div class="social-share" data-sites="weibo,qq,wechat"> 分享本站：</div>           
-								<script type="text/javascript">
-								(function(){
-								var url = "http://widget.weibo.com/distribution/comments.php?width=0&url=https%3A%2F%2Fhans2936.github.io%2Fblogs%2FAbout.html&ralateuid=2161285545&appkey=203699656&dpc=1";
-								document.write('<iframe id="WBCommentFrame" src="' + url + '" scrolling="no" frameborder="0" style="width:100%"></iframe>');
-								})();
-								</script>
-								<script src="http://tjs.sjs.sinajs.cn/open/widget/js/widget/comment.js" type="text/javascript" charset="utf-8"></script>
-								<script type="text/javascript">
-								window.WBComment.init({
-								    "id": "WBCommentFrame"
-								});
-								</script>
+								<div class="social-share" data-sites="weibo,qq,wechat"> 分享本站：</div>
+								<wb:comments url="http://hans2936.github.io/blogs/About.html" width="auto" ></wb:comments>
 								</section>
 
 						</div>
