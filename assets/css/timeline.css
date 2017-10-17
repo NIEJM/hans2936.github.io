@@ -5,7 +5,7 @@ article,section,time,aside{display:block;}
   width: 13px;
   height: 13px;
   top: 17px;
-  left: 20%;
+  left: 10%;
   background: #1c87bf;
   margin-left: -4px;
   border-radius: 50%;
@@ -68,7 +68,7 @@ article,section,time,aside{display:block;}
   width: 5px;
   top: 17px;
   bottom: -17px;
-  left: 20%;
+  left: 10%;
   background: #e6e6e6;
   position: absolute;
 }
@@ -76,9 +76,10 @@ article,section,time,aside{display:block;}
   display: none;
 }
 .content article section time {
-  width: 15%;
+  width: 8%;
   display: block;
   position: absolute;
+  /*position: relative;*/
 }
 .content article section time > span {
   display: block;
@@ -86,12 +87,28 @@ article,section,time,aside{display:block;}
 }
 .content article section aside {
   color: #3a3a38;
-  margin-left: 25%;
+  margin-left: 15%;
   padding-bottom: 15px;
 }
 .content article section .brief {
   color: #9f9f9f;
 }
+
+@media screen and (max-width: 736px) {
+  .point-time {
+left: 5%
+  }
+  .content article section:before {
+left: 5%
+  }
+  .content article section time {
+position: relative;
+  }
+  .content article section aside {
+    margin-left: 10%;
+  }
+}
+
 #moquu_top,#moquu_wxin,#moquu_wshare {
         z-index:2;
         width:30px;

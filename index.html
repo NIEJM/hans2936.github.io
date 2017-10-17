@@ -23,9 +23,6 @@
 	        <link rel="stylesheet" href="assets/nivo_slider/nivo-slider.css" type="text/css" media="screen" />
 	</head>
 	<body>
-	<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)"><div class="moquu_wxinh"></div></a></div>
-	<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)"><div class="moquu_wshareh"></div></a></div>
-
 		<!-- Wrapper -->			
 		<div id="wrapper">
 				<!-- Main -->
@@ -133,9 +130,17 @@
                                                                                        <span>11th, Oct.</span>
                                                                                </time>
                                                                                <aside>
-                                                                                       <p class="things"><h2><a href="CERNblog_test.html" class="logo">第一篇博客</a></h2></p>
-                                                                                       <p class="brief">这是博客的测试模版</p>
-                                                                                       <a href="CERNblog_test.html" class="logo">查看更多</a>
+                                                                                       <p class="things"><h2><a href="blogs/CERNblog_test.html" class="logo">第一篇博客</a></h2></p>
+                                                                                       <p class="brief">
+										       这是博客的测试模版
+										       <br/>这是博客的测试模版
+										       <br/>这是博客的测试模版
+										       <br/>这是博客的测试模版
+										       <br/>这是博客的测试模版
+										       <br/>这是博客的测试模版
+										       <br/>这是博客的测试模版
+										       </p>
+                                                                                       <a href="blogs/CERNblog_test.html" class="logo">查看更多</a>
                                                                                </aside>
                                                                        </section>
                                                                        <section>
@@ -144,7 +149,7 @@
                                                                                        <span>11th, Oct.</span>
                                                                                </time>
                                                                                <aside>
-                                                                                       <p class="things"><h2><a href="CERNblog_test.html" class="logo">第一篇博客</a></h2></p>
+                                                                                       <p class="things"><h2><a href="blogs/CERNblog_test.html" class="logo">第一篇博客</a></h2></p>
                                                                                        <p class="brief">这是博客的测试模版</p>
                                                                                </aside>
                                                                        </section>
@@ -228,40 +233,6 @@
 			<script src="assets/js/jquery.share.min.js"></script>
 			<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 		        <script type="text/javascript" src="assets/nivo_slider/jquery.nivo.slider.js"></script>
-		        <script type="text/javascript">
-			jQuery(document).ready(function($) {
-			    if ("ontouchstart" in document.documentElement) {
-			    $('#slider').nivoSlider({
-				effect: 'slideInLeft',
-				animSpeed: 200,
-				pauseTime: 4000,
-				controlNav: false,
-			        controlNavThumbs: false
-				});
-			    $('a.nivo-nextNav').css('visibility', 'hidden');
-			    $('a.nivo-prevNav').css('visibility', 'hidden');
-			    var element = document.getElementById('slider');
-			    var hammertime = Hammer(element).on("swipeleft", function(event) {
-			      $('#slider img').attr("data-transition","slideInLeft");
-			      $('a.nivo-nextNav').trigger('click');
-			      return false;
-			      });
-			    var hammertime = Hammer(element).on("swiperight", function(event) {
-			      $('#slider img').attr("data-transition","slideInRight");
-			      $('a.nivo-prevNav').trigger('click');
-			      $('#slider img').attr("data-transition","slideInLeft");
-			      return false;
-			      });
-			}
-				else {
-				  $('#slider').nivoSlider({
-	                         effect: 'random',
-        	                 controlNav: true,
-                	         controlNavThumbs: true
-				});
-			}
-			})
-		        </script>
 			<script src="assets/js/hammer.min.js"></script>
 			<script src="assets/js/back.js" type="text/javascript"></script>
 			<!-- <script src="assets/js/wap.js"></script> -->
