@@ -102,6 +102,7 @@ left: 5%
 left: 5%
   }
   .content article section time {
+    width: 15%;
 position: relative;
   }
   .content article section aside {
