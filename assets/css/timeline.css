@@ -54,7 +54,7 @@ article,section,time,aside{display:block;}
 
 .content {
   /*width: 970px;*/
-  /*margin: 30px auto;*/
+  margin: 30px auto;
 }
 .content article {
   position: relative;
