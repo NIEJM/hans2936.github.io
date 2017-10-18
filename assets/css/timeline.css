@@ -53,8 +53,8 @@ article,section,time,aside{display:block;}
 }
 
 .content {
-  width: 970px;
-  margin: 30px auto;
+  /*width: 970px;*/
+  /*margin: 30px auto;*/
 }
 .content article {
   position: relative;
