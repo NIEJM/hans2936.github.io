@@ -54,7 +54,7 @@ article,section,time,aside{display:block;}
 
 .content {
   /*width: 970px;*/
-  margin: 30px auto;
+  /*margin: 30px auto;*/
 }
 .content article {
   position: relative;
@@ -96,13 +96,13 @@ article,section,time,aside{display:block;}
 
 @media screen and (max-width: 736px) {
   .point-time {
-left: 5%
+  left: 5%
   }
   .content article section:before {
-left: 5%
+  left: 5%
   }
   .content article section time {
-    width: 20%;
+    width: 30%;
     position: relative;
   }
   .content article section aside {
