@@ -91,7 +91,8 @@ article,section,time,aside{display:block;}
   padding-bottom: 15px;
 }
 .content article section .brief {
-  color: #9f9f9f;
+  /*color: #9f9f9f;*/
+  color: #303030;
 }
 
 @media screen and (max-width: 736px) {
