@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title> 使用Github Pages制作个人网站（一）：网站框架 </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/share.min.css" />
+		<link rel="stylesheet" href="../assets/css/timeline.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../index.html" class="logo"><strong>韩朔的博客</strong></a>
+                                                                        <ul class="icons">
+									<a href="../blogs/About.html" class="logo"><strong>本站简介：</strong>留言板</a>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+							<!-- Section -->
+								<section>
+								<div class="12u 12u$(small)">
+									<header>
+									<h1 id="toc_0">使用Github Pages制作个人网站（一）：网站框架</h1>	
+									<p>
+										<a href="#" class="icon fa-calendar"> 2017年10月20日</a> 
+										<a href="#" class="icon fa-mouse-pointer"><span id="busuanzi_container_page_pv"> 本文点击数:
+										<span id="busuanzi_value_page_pv"></span></span></a>
+										<a href="Webnote.html" class="icon fa-tag"><u> 网页制作</u></a>
+										<a href="#lv-container" class="icon fa-comments"><u> 点此进入评论</u></a>
+										</p>
+                                                                        </header>
+								
+									<p>一直想做个博客网站，去网上查了一下，最先查出来的是云服务器+WordPress，不过又要买服务器，又要买域名，还得备案。<br/>
+								后来发现每个Github账户都可以开一个自己的静态网站（域名为 username.github.io），非常简单。<br/>
+								静态网站的定义参见<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1">维基百科-网页设计</a>，
+								虽然方便，但是也有一些功能上的限制，最显著的特点就是不能运行php和asp，不能自动读写站内的文件。<br/>
+								不过静态网页依然可以实现个人博客需要的所有功能，而我也只是学习一下做网页、博客什么的，这个方案已经是最好的了。</p>
+
+								<p>这篇博客介绍我搭建网站框架的过程。</p>
+
+ <div class="row">
+								<div class="6u 12u$(small)">
+								<a href="#toc_1">拥有并了解Github 账户</a>
+<ul>
+<li>
+<a href="#toc_2">第一步 注册</a>
+</li>
+<li>
+<a href="#toc_3">第二步 确保可以自由地创建/修改/下载/上传一个库（repository）</a>
+</li>
+</ul>
+</div>
+<div class="6u$ 12u$(small)">
+<a href="#toc_4">搭建Github Page网站</a>
+<ul>
+<li>
+<a href="#toc_5">第一步 创建一个Github Pages repository</a>
+</li>
+<li>
+<a href="#toc_6">第二步 找个网站模版</a>
+</li>
+<li>
+<a href="#toc_7">第三步 开始发挥吧</a>
+</li>
+</ul>
+</div>
+</div>
+
+<h2 id="toc_1">拥有并了解Github 账户</h2>
+<h3 id="toc_2">第一步 注册</h3>
+<p>没啥好说的，进入<a href="https://github.com">https://github.com</a>，然后注册一个账户就可以了。</p>
+<h3 id="toc_3">第二步 确保可以自由地创建/修改/下载/上传一个库（repository）</h3>
+<p>网站是由很多html，css，js等文件组成的，对github pages来说，一个repository就是存放这些文件的文件夹，所以确保可以随心所欲的管理一个库是最基本的。</p>
+<p>这里是第一个官方教程：<a href="https://guides.github.com/activities/hello-world/">GitHub:Hello world</a>。可以通过按钮来理解一个库的构造和维护，不过这只能让你创建修改一个Readme文件。<br/>
+这里你会意识到每个库是可以创建分支(branch)的，实际操作中，如果对版本要求没那么严格（个人网站而已），你可以忽略branch的存在，只用master一个默认branch即可。</p>
+<p>这个时候你已经可以用网页看到这么一个库了，这个图是本站的库，到这一步你的库可能只有一个Readme：<br/></p>
+<span class="image fit"><img src="blogimages/CERNblog_Web_171020_1.jpg" alt=""/></span>
+<p>Github的关键就是可以用Git来控制（<a href="https://zh.wikipedia.org/wiki/Git">维基百科-Git</a>），这是一个版本工具（我的理解是一个每次上传都备份一个版本，并且可以协调多人同时修改的公用网盘）。
+当在确定自己的终端可以使用
+<code>git --version</code> 
+命令（Mac+Xcode自带），并且安装了SSH-Key 之后，你就可以在本地新文件夹内使用如下的基本命令来控制你的库了：</p>
+<pre><code>git clone 你的SSH地址（下载你的reposity）
+git pull （联系服务器，更新本地文件夹）
+git add -all （写入本地的所有新文件）
+git commit -am "随便说点啥" （在本地进行一次有记录地更新，包括本地所有文件的修改）
+git push origin master （把本地的更新推送到服务器）
+</code></pre>
+<p>其中SSH地址可以用网页浏览的Clone or Download, use SSH按钮看到，比如说git@github.com:uername/reposity.git</p>
+
+<p>SSH-Key决定了你的电脑有没有权限进行这些操作，这里有另一个官方教程：<a href="https://help.github.com/articles/connecting-to-github-with-ssh/">GitHub:SSH</a>，这个是必须一步步跟下来的，Mac的重要命令包括：</p>
+
+<pre><code>ls -al ~/.ssh (查一下是不是已经有key了)
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com" （产生一个key，不单独设密码的话一路回车就行）
+pbcopy &lt; ~/.ssh/id_rsa.pub （把你的key复制到粘贴板，不这么复制可能太长了复制不下来）
+</code></pre>
+
+<p>其他系统进入官方网页看就行，如下图，在点击右上头像-Settings-SSH and GPG Keys 这里添加了你刚刚复制的public Key之后，你就有权限进行上述的Git操作了。<br/></p>
+<span class="image fit"><img src="blogimages/CERNblog_Web_171020_2.jpg" alt=""/></span>
+
+<h2 id="toc_4">搭建Github Page网站</h2>
+
+<h3 id="toc_5">第一步 创建一个Github Pages repository</h3>
+
+<p>GitHub Pages repository跟普通的repository是一样的，唯一的区别就是他的名字必须叫做username.gihub.io。这个官方教程 <a href="https://pages.github.com">GitHub Pages</a>
+写的十分好懂，按这个做完之后你就有了一个你的网址 username.github.io，里面有一句 Hello World！</p>
+
+<h3 id="toc_6">第二步 找个网站模版</h3>
+<p>现在离一个好网站只差一步了，就是把好网站服务器的所有文件拷贝到你的文件夹里面。<br/>
+GitHub官方建议你使用博客生成工具 Jekyll，如果这样做的话，直接看官方教程：<a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/">GitHub:Jekyll</a>
+就行了。在你安装好Jekyll之后，直接一条命令就可以产生一个网站文件夹，只需要编辑博客并发布就行了。GitHub在库的设置里面还提供Jekyll主题选择，也可以去网上搜主题或者直接拷贝别人的库。另外一个博客生成工具Hexo也差不多。<br/>
+我当时并不了解博客工具，还希望有一个很炫的页面，所以并没有用博客工具，而是网站模版。我去了一个网站框架网站 <a href="https://html5up.net">HTML5 UP</a>，然后下载了其中一个框架，
+<code>git add</code> 所有的文件到我的网站中。然后我直接本地打开了 index.html，就看到了网站预览，如图：</p>
+<span class="image fit"><img src="blogimages/CERNblog_Web_171020_3.jpg" alt=""/></span>
+<p>
+当你<code>git push</code>之后，你的域名就会变成这样一个网站了。这是一个朴素的模版，不过功能很全，便于管理。<br/>
+不用博客工具的好处在于灵活（也能学到更多的网页知识）。坏处是写一个博客就多一个html，如果有比如超过50篇博客，对一个静态网站来说，批量管理（编辑他们的公共部分、给他们归类什么的）就麻烦了。<br/>
+然而这个模版的公共部分并不复杂，对我这种习惯使用bash+vim（而且写不了几篇博客）的人来说，这是可以接受的。</p>
+<h3 id="toc_7">第三步 开始发挥吧</h3>
+<p>这个模版有三个html，主页、素材页和博客页。这个模版的潜力基本上都显示在这三页了。<br/>
+到目前为止框架是有了，但是网站里面的链接、按钮其实都是空的，先熟悉熟悉这个模版的html、css、js，然后就可以加入自己的修改了。</p>
+<p>下一篇将会介绍怎么在这样简单的网站里面加入一些博客必要的插件和功能。</p>
+
+                                                                </div>
+								</section>
+
+								<div class="social-share" data-sites="weibo,qq,wechat"> 分享到：</div>
+                                                                <div id="lv-container" data-id="city" data-uid="MTAyMC8zMTI1OC83ODA3">
+                                                                <script type="text/javascript">
+                                                                   (function(d, s) {
+                                                                       var j, e = d.getElementsByTagName(s)[0];
+                                                                       if (typeof LivereTower === 'function') { return; }
+                                                                       j = d.createElement(s);
+                                                                       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                                                                       j.async = true;
+
+                                                                       e.parentNode.insertBefore(j, e);
+                                                                           })(document, 'script');
+                                                                        </script>
+                                                                        <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+                                                                </div>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+							<!-- Search -->
+                                                                <section id="search" class="alt">
+                                                                <form method="Get" action="../blogs/Search.html">
+                                                                <input type="text" name="q" id="s" placeholder="站内Google" />
+                                                                </form>
+                                                                </section>
+                                                        <!-- Menu -->
+                                                                <nav id="menu">
+                                                                        <header class="major">
+                                                                                <h2>导航栏</h2>
+                                                                        </header>
+                                                                        <ul>
+                                                                                <li><a href="../index.html">主页</a></li>
+                                                                                <li><a href="../blogs/Hansnote.html">生活归档</a></li>
+                                                                                <li><a href="../blogs/Cernnote.html">工作归档</a></li>
+                                                                                <li><a href="../blogs/Statnote.html">统计学分析</a></li>
+                                                                                <li><a href="../blogs/Physicsnote.html">高能物理</a></li>
+                                                                                <li><a href="../blogs/Languagenote.html">编程语言</a></li>
+                                                                                <li><a href="../blogs/Webnote.html">网页制作</a></li>
+                                                                        </ul>
+                                                                </nav>
+                                                        <!-- Section -->
+                                                                <section>
+                                                                        <header class="major">
+                                                                                <h2>联系方式</h2>
+                                                                        </header>
+                                                                        <ul class="contact">
+                                                                                <li class="fa-envelope-o"><a href="#">hans2936@msn.cn</a></li>
+                                                                                <li class="fa-weibo"><a href="https://www.weibo.com/2161285545">琴剑诗书妃子笑</a></li>
+                                                                                <li class="fa-github"><a href="https://github.com/hans2936">hans2936</a></li>
+                                                                        </ul>
+                                                                </section>
+                                                        <!-- Footer -->
+                                                                <footer id="footer">
+                                                                        <p class="copyright">&copy; 2017 韩朔. <br/></p>
+                                                                </footer>
+
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			<script src="../assets/js/jquery.share.min.js"></script>
+			<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+			<script src="../assets/js/back.js" type="text/javascript"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+			<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: {equationNumbers: { autoNumber: "AMS" } }});</script>
+	</body>
+</html>

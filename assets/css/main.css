@@ -2108,8 +2108,10 @@
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #f56a6a;
+		/*color: #f56a6a;*/
+		color: #F4511E;
 		text-decoration: none;
+		font-size: 1.01em;
 	}
 
 		a:hover {
@@ -2132,6 +2134,7 @@
 
 	p {
 		margin: 0 0 2em 0;
+		font-size: 1.25em;
 	}
 
 	fonthans{
@@ -2170,17 +2173,17 @@
 		}
 
 	h1 {
-		font-size: 4em;
+		font-size: 3em;
 		margin: 0 0 0.5em 0;
 		line-height: 1.3;
 	}
 
 	h2 {
-		font-size: 1.75em;
+		font-size: 1.9em;
 	}
 
 	h3 {
-		font-size: 1.25em;
+		font-size: 1.6em;
 	}
 
 	h4 {
@@ -2198,7 +2201,7 @@
 	@media screen and (max-width: 1680px) {
 
 		h1 {
-			font-size: 3.5em;
+			font-size: 2.5em;
 		}
 
 	}
@@ -2206,7 +2209,7 @@
 	@media screen and (max-width: 980px) {
 
 		h1 {
-			font-size: 3.25em;
+			font-size: 2.5em;
 		}
 
 	}
@@ -2248,7 +2251,7 @@
 		border-radius: 0.375em;
 		border: solid 1px rgba(210, 215, 217, 0.75);
 		font-family: "Courier New", monospace;
-		font-size: 0.9em;
+		font-size: 1.01em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
 	}
@@ -2256,7 +2259,7 @@
 	pre {
 		-webkit-overflow-scrolling: touch;
 		font-family: "Courier New", monospace;
-		font-size: 0.9em;
+		font-size: 1.01em;
 		margin: 0 0 2em 0;
 	}
 
@@ -3691,6 +3694,7 @@
 				text-indent: 0;
 				top: 0;
 				width: inherit;
+				color: #f56a6a;
 			}
 
 		#sidebar.inactive {
@@ -3791,7 +3795,7 @@
 					color: #7f888f;
 					margin-left: -0.0625em;
 					margin-top: -0.25em;
-					font-size: 1.1rem;
+					font-size: 1.0rem;
 					z-index: 1;
 				}
 
