@@ -52,11 +52,11 @@
 								后来发现每个Github账户都可以开一个自己的静态网站（域名为 username.github.io），非常简单。<br/>
 								静态网站的定义参见<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1">维基百科-网页设计</a>，
 								虽然方便，但是也有一些功能上的限制，最显著的特点就是不能运行php和asp，不能自动读写站内的文件。<br/>
-								不过静态网页依然可以实现个人博客需要的所有功能，而我也只是学习一下做网页、博客什么的，这个方案已经是最好的了。</p>
+								不过静态网页依然可以实现个人博客需要的所有功能，而我也只是学习一下做网页、博客什么的，这个方案已经是最好的了。<br/>
+								这篇博客介绍我搭建网站框架的过程。</p>
+								<hr class="major" />
 
-								<p>这篇博客介绍我搭建网站框架的过程。</p>
-
- <div class="row">
+								 <div class="row">
 								<div class="6u 12u$(small)">
 								<a href="#toc_1">拥有并了解Github 账户</a>
 <ul>
@@ -83,6 +83,7 @@
 </ul>
 </div>
 </div>
+ <hr class="major" />
 
 <h2 id="toc_1">拥有并了解Github 账户</h2>
 <h3 id="toc_2">第一步 注册</h3>
@@ -99,11 +100,11 @@
 命令（Mac+Xcode自带），并且安装了SSH-Key 之后，你就可以在本地新文件夹内使用如下的基本命令来控制你的库了：</p>
 <pre><code>git clone 你的SSH地址（下载你的reposity）
 git pull （联系服务器，更新本地文件夹）
-git add -all （写入本地的所有新文件）
+git add --all （写入本地的所有新文件）
 git commit -am "随便说点啥" （在本地进行一次有记录地更新，包括本地所有文件的修改）
 git push origin master （把本地的更新推送到服务器）
 </code></pre>
-<p>其中SSH地址可以用网页浏览的Clone or Download, use SSH按钮看到，比如说git@github.com:uername/reposity.git</p>
+<p>其中SSH地址可以用网页浏览的"Clone or Download"+"use SSH"按钮看到，比如说git@github.com:uername/reposity.git</p>
 
 <p>SSH-Key决定了你的电脑有没有权限进行这些操作，这里有另一个官方教程：<a href="https://help.github.com/articles/connecting-to-github-with-ssh/">GitHub:SSH</a>，这个是必须一步步跟下来的，Mac的重要命令包括：</p>
 
@@ -112,21 +113,22 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com" （产生一个key，不�
 pbcopy &lt; ~/.ssh/id_rsa.pub （把你的key复制到粘贴板，不这么复制可能太长了复制不下来）
 </code></pre>
 
-<p>其他系统进入官方网页看就行，如下图，在点击右上头像-Settings-SSH and GPG Keys 这里添加了你刚刚复制的public Key之后，你就有权限进行上述的Git操作了。<br/></p>
+<p>Linux 和 Windows 进入刚才的教程看就行，如下图，在GitHub点击"右上头像"+"Settings"+"SSH and GPG Keys"，在这里添加了你刚刚复制的public Key之后，你就有权限进行上述的Git操作了。<br/></p>
 <span class="image fit"><img src="blogimages/CERNblog_Web_171020_2.jpg" alt=""/></span>
 
 <h2 id="toc_4">搭建Github Page网站</h2>
 
-<h3 id="toc_5">第一步 创建一个Github Pages repository</h3>
+<h3 id="toc_5">第一步 创建一个Github Pages Repository</h3>
 
-<p>GitHub Pages repository跟普通的repository是一样的，唯一的区别就是他的名字必须叫做username.gihub.io。这个官方教程 <a href="https://pages.github.com">GitHub Pages</a>
+<p>GitHub Pages repository跟普通的库是一样的，唯一的区别就是他的名字必须叫做username.gihub.io。这个官方教程 <a href="https://pages.github.com">GitHub Pages</a>
 写的十分好懂，按这个做完之后你就有了一个你的网址 username.github.io，里面有一句 Hello World！</p>
 
 <h3 id="toc_6">第二步 找个网站模版</h3>
 <p>现在离一个好网站只差一步了，就是把好网站服务器的所有文件拷贝到你的文件夹里面。<br/>
 GitHub官方建议你使用博客生成工具 Jekyll，如果这样做的话，直接看官方教程：<a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/">GitHub:Jekyll</a>
-就行了。在你安装好Jekyll之后，直接一条命令就可以产生一个网站文件夹，只需要编辑博客并发布就行了。GitHub在库的设置里面还提供Jekyll主题选择，也可以去网上搜主题或者直接拷贝别人的库。另外一个博客生成工具Hexo也差不多。<br/>
-我当时并不了解博客工具，还希望有一个很炫的页面，所以并没有用博客工具，而是网站模版。我去了一个网站框架网站 <a href="https://html5up.net">HTML5 UP</a>，然后下载了其中一个框架，
+就行了。在你安装好Jekyll之后，直接一条命令就可以产生一个网站文件夹，
+然后进去编辑博客并发布就行了。GitHub在库的设置里面还提供Jekyll主题选择，也可以去网上搜主题或者直接拷贝别人的库。另外一个博客生成工具Hexo也差不多。<br/>
+我当时并不了解博客工具，还希望有一个很炫的页面，所以并没有用博客工具，而是网站模版。我去了一个模版网站 <a href="https://html5up.net">HTML5 UP</a>，然后下载了其中一个模版，
 <code>git add</code> 所有的文件到我的网站中。然后我直接本地打开了 index.html，就看到了网站预览，如图：</p>
 <span class="image fit"><img src="blogimages/CERNblog_Web_171020_3.jpg" alt=""/></span>
 <p>
