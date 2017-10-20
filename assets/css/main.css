@@ -2137,6 +2137,22 @@
 		font-size: 1.25em;
 	}
 
+        @media screen and (max-width: 980px) {
+
+                p {
+                        font-size: 1.1em;
+                }
+
+        }
+
+        @media screen and (max-width: 736px) {
+
+
+                p {
+                        font-size: 1.05em;
+                }
+	}
+
 	fonthans{
 	 color: white;
 	 font-family: "Roboto Slab", serif;
