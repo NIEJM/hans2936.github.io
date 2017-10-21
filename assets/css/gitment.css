@@ -625,8 +625,8 @@ a.gitment-editor-footer-tip:hover {
 .gitment-markdown kbd,
 .gitment-markdown pre {
   font-family: monospace, monospace;
-  /*font-size: 1em;*/
-  font-size: 12px;
+  font-size: 1em;
+  /*font-size: 12px;*/
 }
 
 .gitment-markdown hr {
