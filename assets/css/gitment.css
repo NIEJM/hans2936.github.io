@@ -626,7 +626,6 @@ a.gitment-editor-footer-tip:hover {
 .gitment-markdown pre {
   font-family: monospace, monospace;
   font-size: 1em;
-  /*font-size: 12px;*/
 }
 
 .gitment-markdown hr {
@@ -655,8 +654,8 @@ a.gitment-editor-footer-tip:hover {
 
 .gitment-markdown input {
   font-family: inherit;
-  /*font-size: inherit;*/
-  font-size: 12px;
+  font-size: inherit;
+  /*font-size: 12px;*/
   line-height: inherit;
 }
 
