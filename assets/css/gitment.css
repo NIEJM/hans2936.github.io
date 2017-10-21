@@ -447,7 +447,7 @@ a.gitment-editor-footer-tip:hover {
   line-height: 1.5;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.5;
   word-wrap: break-word;
 }
@@ -655,7 +655,6 @@ a.gitment-editor-footer-tip:hover {
 .gitment-markdown input {
   font-family: inherit;
   font-size: inherit;
-  /*font-size: 12px;*/
   line-height: inherit;
 }
 
@@ -998,7 +997,7 @@ a.gitment-editor-footer-tip:hover {
   padding: 0;
   margin-top: 16px;
   /*font-size: 1em;*/
-  font-size: 12px;
+  font-size: 10px;
   font-style: italic;
   font-weight: 600;
 }
