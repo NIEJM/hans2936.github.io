@@ -9,7 +9,7 @@ https://hans2936.github.io, 用来学习HTML/Javascript。
 * 2017年10月14日：加入图片滚动，谷歌搜索结果页，评论功能准备使用微博评论箱
 * 2017年10月9日：完成博客模版，因为PHP不能在GitHub使用，搜索为谷歌站内搜索
 
-##技术支持
+## 技术支持
 >网页模版：[Editorial by HTML5 UP](https://html5up.net/editorial)
 模版素材 [Font Awesome](http://fontawesome.io), [jQuery](http://jquery.com), [html5shiv.js](https://github.com/aFarkas/html5shiv), [Respond.js](https://github.com/scottjehl/Respond), [Skel](https://github.com/ajlkn/skel)
 评论功能: [来必力](http://www.laibili.com.cn)
