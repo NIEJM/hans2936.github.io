@@ -25,6 +25,8 @@
                         <script src="assets/js/jquery.share.min.js"></script>
 
 <?php
+//error_reporting(0);
+
 set_time_limit("600");
 //获取搜索关键字
 $keyword=trim($_GET["keyword"]);

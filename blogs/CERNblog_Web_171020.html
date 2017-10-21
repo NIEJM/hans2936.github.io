@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="../assets/css/timeline.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 	</head>
 	<body>
 
@@ -144,20 +145,7 @@ GitHub官方建议你使用博客生成工具 Jekyll，如果这样做的话，�
 								</section>
 
 								<div class="social-share" data-sites="weibo,qq,wechat"> 分享到：</div>
-                                                                <div id="lv-container" data-id="city" data-uid="MTAyMC8zMTI1OC83ODA3">
-                                                                <script type="text/javascript">
-                                                                   (function(d, s) {
-                                                                       var j, e = d.getElementsByTagName(s)[0];
-                                                                       if (typeof LivereTower === 'function') { return; }
-                                                                       j = d.createElement(s);
-                                                                       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                                                                       j.async = true;
-
-                                                                       e.parentNode.insertBefore(j, e);
-                                                                           })(document, 'script');
-                                                                        </script>
-                                                                        <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
-                                                                </div>
+								<div id="gitment"></div>
 
 						</div>
 					</div>
@@ -219,5 +207,18 @@ GitHub官方建议你使用博客生成工具 Jekyll，如果这样做的话，�
 			<script src="../assets/js/back.js" type="text/javascript"></script>
 			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 			<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: {equationNumbers: { autoNumber: "AMS" } }});</script>
+			<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+                        <script>
+                        const gitment = new Gitment({
+                          owner: 'hans2936',
+                          repo: 'hans2936.github.io',
+                          oauth: {
+                          client_id: '3e8c534985cee5b9549d',
+                          client_secret: '292ef9d120bfb7ed9b61b0455a52c8c61737250c',
+                          },
+                        })
+                        gitment.render('gitment')
+                        </script>
+
 	</body>
 </html>
