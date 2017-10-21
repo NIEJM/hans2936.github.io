@@ -2140,7 +2140,7 @@
         @media screen and (max-width: 980px) {
 
                 p {
-                        font-size: 1.2em;
+                        font-size: 1.25em;
                 }
 
         }
@@ -2149,7 +2149,7 @@
 
 
                 p {
-                        font-size: 1.15em;
+                        font-size: 1.2em;
                 }
 	}
 
@@ -2233,7 +2233,7 @@
 	@media screen and (max-width: 736px) {
 
 		h1 {
-			font-size: 2em;
+			font-size: 1.5em;
 			line-height: 1.4;
 		}
 
