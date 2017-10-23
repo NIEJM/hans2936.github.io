@@ -2284,6 +2284,8 @@
 			line-height: 1.75;
 			padding: 1em 1.5em;
 			overflow-x: auto;
+			white-space: pre-wrap;
+		    word-wrap: break-word;
 		}
 
 	hr {
