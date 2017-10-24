@@ -17,12 +17,9 @@
         </head>
 
 <body>
-			<script src="assets/js/jquery.min.js"></script>
-                        <script src="assets/js/skel.min.js"></script>
-                        <script src="assets/js/util.js"></script>
-                        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-                        <script src="assets/js/main.js"></script>
-                        <script src="assets/js/jquery.share.min.js"></script>
+<div id="wrapper">
+                  <div id="main">
+                              <div class="inner">
 
 <?php
 //error_reporting(0);
@@ -36,6 +33,7 @@ if($keyword==""){
    echo"您要搜索的关键字不能为空";
    exit;//结束程序
 }
+
 function listFiles($dir,$keyword,&$array){
    $handle=opendir($dir);
    while(false!==($file=readdir($handle))){
@@ -76,6 +74,17 @@ foreach($array as $value){
    echo "<a href=$filedir target=_blank>$title </a>"."<br>\n";
 }
 ?>
+</div>
+</div>
+</div>
+
+			<script src="assets/js/jquery.min.js"></script>
+                        <script src="assets/js/skel.min.js"></script>
+                        <script src="assets/js/util.js"></script>
+                        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+                        <script src="assets/js/main.js"></script>
+                        <script src="assets/js/jquery.share.min.js"></script>
+
 </body>
 </html>
 

@@ -1,8 +1,3 @@
-韩朔的个人网页，用来学习HTML/Javascript。
-因为没有使用博客自动生成工具，不会放置大量的文章
-
-2017年10月9日：完成博客模版，包括评论功能，搜索功能暂不可用，准备直接加入百度或谷歌的搜索栏
-
 Editorial by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -18,14 +13,11 @@ you can use for pretty much whatever.
 
 (* = not included)
 
-模版名称
 Editorial by HTML5 UP 
 
-模版作者 AJ
 html5up.net | aj@lkn.io | @ajlkn
  CCA 3.0 license (html5up.net/license) 
 
-模版素材
 Credits:
 
 	Demo Images:
