@@ -2166,7 +2166,7 @@
 	 }
 	@media screen and (max-width: 980px) {
 	  fonthans{
-	  font-size: 1.2em;
+	  font-size: 1.5em;
 	  }
 	}
 	@media screen and (max-width: 736px) {
@@ -2240,6 +2240,9 @@
 		h2 {
 			font-size: 1.5em;
 		}
+		h3 {
+                	font-size: 1.3em;
+	        }
 
 	}
 
@@ -3063,18 +3066,7 @@
 		input[type="button"].big,
 		button.big,
 		.button.big {
-			font-size: 1em;
-			height: 3.65em;
-			line-height: 3.65em;
-		}
-
-		input[type="submit"].special,
-		input[type="reset"].special,
-		input[type="button"].special,
-		button.special,
-		.button.special {
-		  /*this part is copied form button*/
-		-moz-appearance: none;
+		  -moz-appearance: none;
                 -webkit-appearance: none;
                 -ms-appearance: none;
                 appearance: none;
@@ -3100,6 +3092,45 @@
                 text-decoration: none;
                 text-transform: uppercase;
                 white-space: nowrap;
+		  /*
+			font-size: 1em;
+			height: 3.65em;
+			line-height: 3.65em;
+		*/		  
+		}
+
+		input[type="submit"].special,
+		input[type="reset"].special,
+		input[type="button"].special,
+		button.special,
+		.button.special {
+		  /*this part is copied form button*/
+		-moz-appearance: none;
+                -webkit-appearance: none;
+                -ms-appearance: none;
+                appearance: none;
+                -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+                -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+                -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+                transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+                border-radius: 30%;
+                border: 0;
+                cursor: pointer;
+                display: inline-block;
+                font-family: "Roboto Slab", serif;
+                font-size: 0.8em;
+                font-weight: 700;
+                height: 3.5em;
+                letter-spacing: 0.075em;
+                line-height: 3.5em;
+                padding: 0 2.25em;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                white-space: nowrap;
+		background-color: #f56a6a;
+                box-shadow: none;
+                color: #ffffff !important;
 		/*
 		background-color: #f56a6a;
 		box-shadow: none;

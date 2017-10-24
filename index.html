@@ -86,21 +86,20 @@
 								<section>
                                                                 <div class="content">
                                                                         <article>
-                                                                       <h2>2017</h2>
+                                                                       <h2>网页设计</h2>
 								       <section>
                                                                                <span class="point-time point-yellow"></span>
                                                                                <time datetime="2013-03">
-                                                                                       <span>10月23日</span>
+                                                                                       <span>2017年<br/>10月23日</span>
                                                                                </time>
                                                                                <aside>
                                                                                        <p class="things"><h3><a href="blogs/CERNblog_Web_171023.html" class="logo">
                                                                                        使用Github Pages制作个人网站(下)：交互设计</a></h3></p>
-                                                                                       在熟悉网站模版之后，你就已经可以编写博客页，并且链接到首页了。
-                                                                                但对一个博客网站来说这样还不够，很多互动功能是需要手动添加、单独理解的，
                                                                                 这一篇文章是一个大合集，总结本站使用的所有互动功能，以及选择这些解决方案的原因。
                                                                                        <a href="blogs/CERNblog_Web_171023.html" class="logo">查看更多</a>
                                                                                </aside>
                                                                        </section>
+
                                                                        <section>
                                                                                <span class="point-time point-yellow"></span>
 									       <time datetime="2013-03">
@@ -109,14 +108,12 @@
                                                                                <aside>
                                                                                        <p class="things"><h3><a href="blogs/CERNblog_Web_171020.html" class="logo">
 										       使用Github Pages制作个人网站(上)：网站框架</a></h3></p>
-										       一直想做个博客网站，去网上查了一下，最先查出来的是云服务器+
-                                                                                 WordPress，不过又要买服务器，又要买域名，还得备案。
-                                                                                 后来发现每个Github账户都可以开一个自己的静态网站（域名为 username.github.io），非常简单。
                                                                                  这篇博客介绍我搭建网站框架的过程。
 										       <a href="blogs/CERNblog_Web_171020.html" class="logo">查看更多</a>
                                                                                </aside>
                                                                        </section>
-								       <div id = "showdiv2017" style="display:none;">
+
+								       <div id = "showdivWeb" style="display:none;">
 								       <section>
                                                                                <span class="point-time point-green"></span>
                                                                                <time datetime="2013-03">
@@ -129,24 +126,49 @@
                                                                                        <a href="blogs/CERNblog_test.html" class="logo">查看更多</a>
                                                                                </aside>
                                                                        </section>
+								       </div>
+								       <p style="text-align:center"><br/>
+                                                                       <a class="button big" href="#showdivWeb" onclick="showHideCodeWeb()">
+                                                                       展开/收起</a>
+								       <a class="button special" href="blogs/Webnote.html">
+								       进入专题
+								       </a></p>
+                                                                       </article>
+								       <article>
+                                                                       <h2>生活散文</h2>
 								       <section>
-                                                                               <span class="point-time point-purple"></span>
+                                                                               <span class="point-time point-green"></span>
                                                                                <time datetime="2013-03">
-                                                                                       <span>10月11日</span>
+                                                                                       <span>2017年<br/>10月11日</span>
                                                                                </time>
                                                                                <aside>
-										       <p class="things"><h3><a href="blogs/CERNblog_test.html" class="logo">
+                                                                                       <p class="things"><h3><a href="blogs/CERNblog_test.html" class="logo">
                                                                                        第一篇博客</a></h3></p>
                                                                                        这是博客的测试模版
                                                                                        <a href="blogs/CERNblog_test.html" class="logo">查看更多</a>
                                                                                </aside>
                                                                        </section>
-								       </div>
-								       <p style="text-align:center"><br/>
-                                                                       <a class="button special" href="#showdiv2017" onclick="showHideCode2017()">
-                                                                       展开/收起2017</a></p>
+                                                                       <div id = "showdivHans" style="display:none;">
+                                                                       <section>
+                                                                               <span class="point-time point-green"></span>
+                                                                               <time datetime="2013-03">
+                                                                                       <span>10月11日</span>
+                                                                               </time>
+                                                                               <aside>
+                                                                                       <p class="things"><h3><a href="blogs/CERNblog_test.html" class="logo">
+                                                                                       第一篇博客</a></h3></p>
+                                                                                       这是博客的测试模版
+                                                                                       <a href="blogs/CERNblog_test.html" class="logo">查看更多</a>
+                                                                               </aside>
+                                                                       </section>
+                                                                       </div>
+                                                                       <p style="text-align:center"><br/>
+                                                                       <a class="button big" href="#showdivHans" onclick="showHideCodeHans()">
+                                                                       展开/收起</a>
+                                                                       <a class="button special" href="blogs/Hansnote.html">
+                                                                       进入专题
+                                                                       </a></p>
                                                                        </article>
-
                                                                 </div>
                                                                 </section>
 
@@ -227,9 +249,12 @@
 			<script src="assets/js/wap.js"></script>
                         <script type="text/javascript">browserRedirect("indexmobile.html");</script>
 			<script type="text/javascript">
-         			 function showHideCode2017(){
-			             $("#showdiv2017").toggle();
+         			 function showHideCodeWeb(){
+			             $("#showdivWeb").toggle();
 			          }
+				function showHideCodeHans(){
+                                     $("#showdivHans").toggle();
+                                  }
 			</script>
 	</body>
 </html>
