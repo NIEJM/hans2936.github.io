@@ -94,7 +94,21 @@ article,section,time,aside{display:block;}
   /*color: #9f9f9f;*/
   color: #303030;
 }
-
+@media screen and (max-width: 980px) {
+.point-time {
+  left: 5%
+  }
+  .content article section:before {
+  left: 5%
+  }
+  .content article section time {
+    width: 20%;
+    position: relative;
+  }
+  .content article section aside {
+    margin-left: 10%;
+  }
+}
 @media screen and (max-width: 736px) {
   .point-time {
   left: 5%

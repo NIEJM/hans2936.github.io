@@ -46,7 +46,7 @@
 								        <div class="slider-wrapper theme-default">
 										<div id="slider" class="nivoSlider">
 								                <a href="blogs/CERNblog_Web_171023.html" class="image">
-										<img src="images/Webpage.jpg" alt="" data-thumb="images/Webpage.jpg" title="#htmlcaption1" />
+                                                                                <img src="images/Webpage.jpg" alt="" data-thumb="images/Webpage.jpg" title="#htmlcaption1" />
                                                                                 </a>
 										<a href="blogs/CERNblog_Web_171020.html" class="image">
 										<img src="blogs/blogimages/CERNblog_Web_171020_1.jpg" alt="" data-thumb="blogs/blogimages/CERNblog_Web_171020_1.jpg" title="#htmlcaption2" />
@@ -60,11 +60,13 @@
 									    </div>
 									    <div id="htmlcaption1" class="nivo-html-caption">
                                                                                 <fonthans><a href="blogs/CERNblog_Web_171023.html"> 使用Github Pages制作个人网站(下)：交互设计</a></fonthans>
-                                                                                <br/>这一篇文章是一个大合集，总结本站使用的所有互动功能。
+                                                                            <br/>
+                                                                                这一篇文章是一个大合集，总结本站使用的所有互动功能。
                                                                             </div>
 								            <div id="htmlcaption2" class="nivo-html-caption">
 								                 <fonthans><a href="blogs/CERNblog_Web_171020.html "> 使用Github Pages制作个人网站(上)：网站框架</a></fonthans>
-										 <br/>这篇博客介绍我搭建网站框架的过程。
+										 <br/>
+										 这篇博客介绍我搭建网站框架的过程。
 								            </div>
 									    <div id="htmlcaption3" class="nivo-html-caption">
 									    	<fonthans><a href="blogs/Statnote.html"> 专题：统计分析</a></fonthans>
@@ -111,6 +113,7 @@
 										       <a href="blogs/CERNblog_Web_171020.html" class="logo">查看更多</a>
                                                                                </aside>
                                                                        </section>
+								       <div id = "showdiv2017" style="display:none;">
 								       <section>
                                                                                <span class="point-time point-green"></span>
                                                                                <time datetime="2013-03">
@@ -135,23 +138,14 @@
                                                                                        <a href="blogs/CERNblog_test.html" class="logo">查看更多</a>
                                                                                </aside>
                                                                        </section>
+								       </div>
+								       <p style="text-align:center"><br/>
+								       <a class="button special" href="#showdiv2017" onclick="showHideCode2017()">
+								       展开/收起2017</a></p>
                                                                        </article>
 
                                                                 </div>
                                                                 </section>
-								<section>
-                                                                        <div class="posts" id="mark">
-                                                                                <article>
-                                                                                        <h3><a href="blogs/Hansnote.html">生活归档</a></h3>
-                                                                                        生活笔记，业余文学爱好者。
-                                                                                </article>
-                                                                                <article>
-                                                                                        <h3><a href="blogs/Cernnote.html">工作归档</a></h3>
-                                                                                        高能物理、统计学分析、软件编程和网页制作。
-                                                                                </article>
-                                                                        </div>
-                                                                </section>
-
 
 						</div>
 					</div>
@@ -227,5 +221,10 @@
 		        <script type="text/javascript" src="assets/nivo_slider/jquery.nivo.slider.js"></script>
 			<script src="assets/js/hammer.min.js"></script>
 			<script src="assets/js/back.js" type="text/javascript"></script>
+			<script type="text/javascript">
+         			 function showHideCode2017(){
+			             $("#showdiv2017").toggle();
+			          }
+			</script>
 	</body>
 </html>
