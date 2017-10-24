@@ -134,7 +134,7 @@
 <hr class="major" />
 <h2 id="toc_1">搜索功能</h2>
 
-<p>搜索功能包括两部分，一是在站内快速找到某一篇博客，这个方便网站的使用；二是在站外的搜索引擎上可以查到你的博客，这个有助于网站的推广。然而我在选择搜索工具的事后发现静态网站是无法自己写站内引擎的，所以本站的搜索功能就暂时借助第三方（谷歌）实现了。</p>
+<p>搜索功能包括两部分，一是在站内快速找到某一篇博客，这个方便网站的使用；二是在站外的搜索引擎上可以查到你的博客，这个有助于网站的推广。然而我在选择搜索工具的时候发现静态网站是无法自己写站内引擎的，所以本站的搜索功能就暂时借助第三方（谷歌）实现了。</p>
 
 <h3 id="toc_2">php站内搜索的失败尝试</h3>
 
@@ -147,21 +147,21 @@
 </code></pre>
 
 <p>这个搜索引擎目前的效果是简单的列出全部搜出来的文件链接，在这个效果上美化一下就可以了。<br/>
-在测试PHP文件的时候，必须要打开本地Web服务，启动方法（Mac）参见本文的“网页编辑后的预览”一节。<br/>
+在测试PHP文件的时候，必须要打开本地Web服务，启动方法（Mac）参见本文的<a href="#toc_16">“网页编辑后的预览”一节。</a><br/>
 不成功的原因是显然的，Github Pages是静态的，不能运行php程序。不过这段学习经历挺有意思。</p>
 
 <h3 id="toc_3">谷歌自定义搜索</h3>
 
 <p>引入谷歌自定义搜索有两个工作，一是建立一个自定义引擎（<a href="https://cse.google.com">谷歌自定义搜索</a>），二是给谷歌提供网站信息（<a href="https://www.google.com/webmasters/tools">Google Search Console</a>）。<br/>
 点击<a href="https://cse.google.com">谷歌自定义搜索</a>，创建一个搜索引擎，然后在“外观”选项卡里就可以找到“保存并获取代码”按钮了。把这个代码加入你要显示结果的网页即可。<br/>
-谷歌自定义引擎是支持分页显示的，这也是本站搜索功能的实现方式，首先选择一个分页的引擎主题，然后单独建立一个Search.html，加入刚才说的自定义引擎代码，然后在其他网页需要加入搜索框的地方输入</p>
+谷歌自定义引擎的搜索框有点丑，十有八九跟你的主题不一样，好在这个引擎也支持分页显示。本站的搜索功能就是用分页的方式实现的：首先选择一个分页的引擎主题，然后单独建立一个Search.html，加入刚才说的自定义引擎代码，然后在其他网页需要加入搜索框的地方输入一个原生主题的搜索框。</p>
 
 <pre><code>&lt;form method=&quot;Get&quot; action=&quot;blogs/Search.html&quot;&gt;
 &lt;input type=&quot;text&quot; name=&quot;q&quot; id=&quot;s&quot; placeholder=&quot;站内Google&quot; /&gt;
 &lt;/form&gt;
 </code></pre>
 
-<p>这样每次搜索就会跳转到搜索结果页了。<br/>
+<p>这样每次搜索就会跳转到搜索结果页了。当然也可以用“弹出”主题，把<code>action</code>直接放到本页，就可以有直接在本页显示结果的效果。<br/>
 给谷歌提供网站信息也是很重要的，这决定了谷歌搜索你网站时结果的质量。我首先在<a href="https://www.google.com/webmasters/tools">Google Search Console</a>注册了一个账户，添加本站，然后在管理界面的“抓取”、“站点地图”添加了一个写着本站所有网页地址的sitemap.                 txt文件，这样谷歌就知道本站以及各个网页的位置了（只添加站点不提交地图也行，这关系到谷歌爬取网页的效率）。<br/>
 目前搜索“博客”的效果如下（一条广告是难免的，毕竟是免费版）。当我频繁修改网站的时候，谷歌的滞后是很明显的。</p>
 <span class="image fit"><img src="blogimages/CERNblog_Web_171023_1.jpg" alt=""/></span>
@@ -220,19 +220,6 @@ Github Pages显然是境外网站，不需要提供备案信息，只要选择�
 <span class="image fit"><img src="blogimages/CERNblog_Web_171023_4.jpg" alt=""/></span>
 <span class="image fit"><img src="blogimages/CERNblog_Web_171023_5.jpg" alt=""/></span>
 </div></div>
-
-<h2 id="toc_9">分享按钮</h2>
-
-<p>分享也是博客网站重要的互动功能。在国内比较重要的就是支持微信和微博的分享，尤其是微信。<br/>
-本站的评论栏上面都有分享按钮，其中微信还可以扫码，这个功能来自于<a href="https://github.com/overtrue/share.js">Github:share.js</a>。
-我是把整个包下载下来，学习了demo，然后照搬到本站的。<br/>
-现在这个分享按钮并不是腾讯或新浪提供的原生插件，对微博、QQ来说是跳转到一个分享页，对微信来说是在微信中打开本网址，进而实现分享的。因为有微博评论箱的经验，我也就不强求原生插件了，现在这个效果还可以。</p>
-
-<h2 id="toc_10">计数</h2>
-
-<p>在博客列表统计评论数、点击数、赞数可以让访问者快速找到比较火的文章。也可以为进一步排序提供依据。统计也是动态的，要借助一个第三方服务。<br/>
-本站的博客都有一个点击量统计，这些数字是提供自<a href="http://busuanzi.ibruce.info">网站:不蒜子</a>的。教程链接为<a href="http://ibruce.info/2015/04/04/busuanzi/">教程:不蒜子</a>，非常简单，粘贴里面的代码进入网页即可。这个统计分本站点击，本站访问人次和本页点击。<br/>
-但是现在点击统计仅限于本页，没有传递到博客列表。另外，评论和赞的统计比点击数更有意义，Gitment应该可以做到但还没有官方的解决方案。这些以后再去开发吧。</p>
 
 <h2 id="toc_11">网站导航</h2>
 
@@ -299,13 +286,28 @@ sudo apachectl stop
 <h3 id="toc_19">图片滚动插件</h3>
 
 <p>这个功能对博客来说可有可无，不过对于普通网站来说，宣传新闻，推销产品什么的还是很有用的。我觉得很有意思就留在首页了，循环播放本站的日志，这应该是本站唯一一个没那么朴素的效果。<br/>
-本站的插件叫做<a href="https://github.com/Codeinwp/Nivo-Slider-jQuery">Nivo Slider</a>，用起来比较舒服，因为图片和图例是分开的，设置也很多。我试了好几个素材网站的插件都没有这个好。但是Nivo                                                                                Slider有一个毛病是图片的尺寸最好都一样，而且不能太方正（我都是1920x960的图），否则电脑端还好，旦在移动端会出现显示问题。<br/>
+本站的插件叫做<a href="https://github.com/Codeinwp/Nivo-Slider-jQuery">Nivo Slider</a>，用起来比较舒服，因为图片和图例是分开的，设置也很多。我试了好几个素材网站的插件都没有这个好。但是Nivo                                                                                Slider有一个毛病是图片的尺寸最好都一样，而且不能太方正（我都是1920x960的图），否则电脑端还好，但在移动端会出现显示问题。<br/>
 点击链接<a href="https://github.com/Codeinwp/Nivo-Slider-jQuery">Github:Nivo Slider</a>，下载并学习demo就可以把它加入你的网页了。</p>
 
 <h3 id="toc_20">手机滑动的实现</h3>
 
 <p>Nivo Slider本身是不支持手机的，找那两个小按钮实在比较麻烦。所以我找到了一位高人的博客 <a href="http://willrees.com/2013/02/make-your-nivo-slider-touch-capable/">Will Rees</a>。他在里面讲了怎样利用一段支持手机滑动指令的代码 <a href="http://hammerjs.github.          io">Hammer.js</a>实现Nivo Slider的左右滑动。<br/>
 用手机打开本站主页就可以看到效果了。不过因为我只是在Nivo Slider上面稍作修改，在手机上是只能左右滑动，不能手指悬停的。完美的解决方案可能是为手机单独找个插件。</p>
+
+<h2 id="toc_9">分享按钮</h2>
+
+<p>分享也是博客网站重要的互动功能。在国内比较重要的就是支持微信和微博的分享，尤其是微信。<br/>
+本站的评论栏上面都有分享按钮，其中微信还可以扫码，这个功能来自于<a href="https://github.com/overtrue/share.js">Github:share.js</a>。
+我是把整个包下载下来，学习了demo，然后照搬到本站的。<br/>
+现在这个分享按钮并不是腾讯或新浪提供的原生插件，对微博、QQ来说是跳转到一个分享页，
+对微信来说是在微信中打开本网址，进而实现分享的。因为有微博评论箱的经验，我也就不强求原生插件了，现在这个效果还可以。</p>
+
+<h2 id="toc_10">计数</h2>
+
+<p>在博客列表统计评论数、点击数、赞数可以让访问者快速找到比较火的文章。也可以为进一步排序提供依据。统计也是动态的，要借助一个第三方服务。<br/>
+本站的博客都有一个点击量统计，这些数字是提供自<a href="http://busuanzi.ibruce.info">网站:不蒜子</a>的。教程链接为
+<a href="http://ibruce.info/2015/04/04/busuanzi/">教程:不蒜子</a>，非常简单，粘贴里面的代码进入网页即可。这个统计分本站点击，本站访问人次和本页点击。<br/>
+但是现在点击统计仅限于本页，没有传递到博客列表。另外，评论和赞的统计比点击数更有意义，Gitment应该可以做到但还没有官方的解决方案。这些以后再去开发吧。</p>
 
 <h2 id="toc_21">关于、版权</h2>
 <p>考虑到现在转载不署名的情况到处都是，在某个位置声明一下网站内容的版权也是有必要的。本站的版权声明见<a href="https://hans2936.github.io/blogs/About.html#declare">本站：关于</a>。在网页中加入这个版权声明其实很简单，只要进入版权网页<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/">Creative Commons</a>，在这一页最下方点击“<a href="https://creativecommons.org/choose/results-one?license_code=by-nc-sa&amp;amp;jurisdiction=cn&amp;amp;version=3.0&amp;amp;lang=zh">将这个授权协议使用在您自己的作品中</a>”就可以找到代码了，或者直接点这里的链接也行。<br/>
