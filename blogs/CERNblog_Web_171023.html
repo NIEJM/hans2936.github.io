@@ -147,7 +147,7 @@
 </code></pre>
 
 <p>这个搜索引擎目前的效果是简单的列出全部搜出来的文件链接，在这个效果上美化一下就可以了。<br/>
-在测试PHP文件的时候，必须要打开本地Web服务，启动方法（Mac）参见本文的<a href="#toc_16">“网页编辑后的预览”一节。</a><br/>
+在测试PHP文件的时候，必须要打开本地Web服务，启动方法（Mac）参见本文的<a href="#toc_16">“网页编辑后的预览”</a>一节。<br/>
 不成功的原因是显然的，Github Pages是静态的，不能运行php程序。不过这段学习经历挺有意思。</p>
 
 <h3 id="toc_3">谷歌自定义搜索</h3>
@@ -251,17 +251,11 @@ Github Pages显然是境外网站，不需要提供备案信息，只要选择�
 <p>在写博客的时候，如果直接在html里面敲字体验并不好。因为要不断地敲一些<code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>,  <code>&lt;li&gt;</code> 这些格式的开头和结尾。虽然latex写习惯了之后这也没什么，但是个人博客还有更轻松的办法来写，就是用Markdown编辑器。<br/>
 <a href="https://zh.wikipedia.org/wiki/Markdown">Markdown语法</a>是一个非常适合写日志的语法。我直接从App Store里面搜了一个编辑器，叫<a href="http://zh.mweb.im">MWeb</a>，还是很好用的。写完之后可以直接导出为html格式，然后取其中正文部分粘贴到博客网页即可。这个过程只需要注意检查图片、列表等特殊部分跟网站模板的兼容性就行了。</p>
 <span class="image fit"><img src="blogimages/CERNblog_Web_171023_6.jpg" alt=""/></span>
-<p>顺便提一句数学公式，这是用<a href="https://www.mathjax.org">MaxJax</a>来实现的。在网页的引用中加入</p>
+<p>举例来说，Mweb支持数学公式的编辑和导出，这是用<a href="https://www.mathjax.org">MathJax</a>来实现的。MWeb在导出html时会自动转换格式，但此时要注意检查网页的引用：</p>
 
 <pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/x-mathjax-config&quot;&gt;MathJax.Hub.Config({TeX: {equationNumbers: { autoNumber: &quot;AMS&quot; } }});&lt;/script&gt;
 </code></pre>
-
-<p>再按正确的语法输入即可。例如</p>
-
-<pre><code>&lt;p&gt;行内公式：\(\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N\)&lt;/p&gt;
-</code></pre>
-
 
 <h3 id="toc_16">网页编辑后的预览</h3>
 
