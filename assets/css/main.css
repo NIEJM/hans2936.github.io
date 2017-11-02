@@ -2134,13 +2134,13 @@
 
 	p {
 		margin: 0 0 2em 0;
-		font-size: 1.25em;
+		font-size: 1.2em;
 	}
 
         @media screen and (max-width: 980px) {
 
                 p {
-                        font-size: 1.25em;
+                        font-size: 1.2em;
                 }
 
         }
@@ -2604,7 +2604,7 @@
 		}
 
 		.image.left, .image.right {
-			max-width: 35%;
+			max-width: 30.4%;
 		}
 
 			.image.left img, .image.right img {

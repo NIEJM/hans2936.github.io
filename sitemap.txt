@@ -1,13 +1,11 @@
 https://hans2936.github.io/index.html
 https://hans2936.github.io/blogs/About.html
 https://hans2936.github.io/blogs/CERNblog_test.html
-https://hans2936.github.io/blogs/Cernnote.html
-https://hans2936.github.io/blogs/HANSblog_test.html
 https://hans2936.github.io/blogs/Hansnote.html
 https://hans2936.github.io/blogs/Languagenote.html
 https://hans2936.github.io/blogs/Physicsnote.html
 https://hans2936.github.io/blogs/Search.html
 https://hans2936.github.io/blogs/Statnote.html
-https://hans2936.github.io/blogs/Webnote.html
 https://hans2936.github.io/blogs/CERNblog_Web_171020.html
 https://hans2936.github.io/blogs/CERNblog_Web_171023.html
+https://hans2936.github.io/blogs/HANSblog_171102.html
