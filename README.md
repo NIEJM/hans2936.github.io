@@ -31,7 +31,7 @@ https://hans2936.github.io, 用来整理写过的东西，并学习网页制作�
 
 # 重要上传记录
 * 2017年12月8日：更名“统计学分析”为“数据分析”。上传博客[“忘”](https://hans2936.github.io/blogs/HANSblog_171208.html)
-* 2017年11月2日：减少导航栏主题为：易北文集、统计学分析、高能物理和软件编程，完成主页编辑，上传博客[“人如明镜”](https://hans2936.github.io/blogs/HANSblog_171102.html)
+* 2017年11月2日：减少导航栏主题，完成主页编辑，上传博客[“人如明镜”](https://hans2936.github.io/blogs/HANSblog_171102.html)
 * 2017年10月23日：上传第二篇博客[“Github Pages（下）”](https://hans2936.github.io/blogs/CERNblog_Web_171023.html)，完成对本站模版、素材的总结。
 * 2017年10月21日：使用Gitment作为评论系统。
 * 2017年10月20日：使用Makedown编辑器写了第一篇博客[“Github Pages（上）”](https://hans2936.github.io/blogs/CERNblog_Web_171020.html)。
