@@ -10,7 +10,7 @@ https://hans2936.github.io, 用来整理写过的东西，并学习网页制作�
 
 ### 工作
 主要工作为在欧洲核子研究组织（[CERN](https://home.cern)）进行粒子探测器数据的物理重建和统计学分析。
-数据分析技术包括数据模型、来源、蒙特卡洛模拟；数据获取、存储、数据库；数据重建、刻度；统计学分析四方面。
+接触的数据分析技术包括数据模型、来源、蒙特卡洛模拟；数据获取、存储、数据库；数据重建、刻度；以及统计学分析四个方面。
 其中统计学分析包括选择条件、分组策略优化，本底组成估计， 信号/本底参数化，置信区间测量，冗余参数分析和数据可视化。分析程序基于C++ 和[ROOT Analysis Framework](https://root.cern.ch)。
 
 ### 业余
@@ -30,8 +30,8 @@ https://hans2936.github.io, 用来整理写过的东西，并学习网页制作�
 >回到顶部按钮：[17素材网](http://www.17sucai.com)
 
 # 重要上传记录
-* 2017年12月8日：更名“统计学分析”为“数据分析”。上传博客[“忘”](https://hans2936.github.io/blogs/HANSblog_171208.html)
-* 2017年11月2日：减少导航栏主题，完成主页编辑，上传博客[“人如明镜”](https://hans2936.github.io/blogs/HANSblog_171102.html)
+* 2017年12月8日：更名“统计学分析”为“数据分析”。上传博客[“忘”](https://hans2936.github.io/blogs/HANSblog_171208.html)。
+* 2017年11月2日：减少导航栏主题，完成主页编辑，上传博客[“人如明镜”](https://hans2936.github.io/blogs/HANSblog_171102.html)。
 * 2017年10月23日：上传第二篇博客[“Github Pages（下）”](https://hans2936.github.io/blogs/CERNblog_Web_171023.html)，完成对本站模版、素材的总结。
 * 2017年10月21日：使用Gitment作为评论系统。
 * 2017年10月20日：使用Makedown编辑器写了第一篇博客[“Github Pages（上）”](https://hans2936.github.io/blogs/CERNblog_Web_171020.html)。
